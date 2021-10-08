@@ -1,5 +1,6 @@
 {
-  "name": "chess-game",
+  "homepage": "https://chesswithfriend.herokuapp.com/",
+  "name": "chesswithfriend",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
