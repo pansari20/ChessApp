@@ -47,19 +47,16 @@ class CreateNewGame extends React.Component {
             inputText: typedText
         })
     }
+    
 
     render() {
         // !!! TODO: edit this later once you have bought your own domain. 
-
         return (<React.Fragment>
             {
                 this.state.didGetUserName ? 
-
                 <Redirect to = {"/game/" + this.state.gameId}><button className="btn btn-success" style = {{marginLeft: String((window.innerWidth / 2) - 60) + "px", width: "120px"}}>Start Game</button></Redirect>
-
             :
-               <div>
-
+                <div>
                     <img src = {HomeIntro} style={{height:"100px", width:"700px",
                     marginLeft: String((window.innerWidth / 2) - 350) + "px",
                     marginTop: String((window.innerHeight / 8)) + "px"}}

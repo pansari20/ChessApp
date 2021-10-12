@@ -127,7 +127,7 @@ function VideoChatApp(props) {
   let UserVideo;
   if (stream) {
     UserVideo = (
-      <Video playsInline muted ref={userVideo} autoPlay style = {{width: "50%", height: "50%"}} />
+      <Video playsInline muted ref={userVideo} autoPlay style = {{height: "50vh", display: 'block', margin: 'auto', WebkitTransform: 'rotateY(180deg)', transform: 'rotateY(180deg)'}} />
     );
   }
 
@@ -135,7 +135,7 @@ function VideoChatApp(props) {
 
   if (callAccepted) {
     mainView = (
-      <Video playsInline ref={partnerVideo} autoPlay style = {{width: "50%", height: "50%"}} />
+      <Video playsInline ref={partnerVideo} autoPlay style = {{height: "50vh", display: 'block', margin: 'auto', WebkitTransform: 'rotateY(180deg)', transform: 'rotateY(180deg)'}} />
     );
   } else if (receivingCall) {
     mainView = (
@@ -154,7 +154,7 @@ function VideoChatApp(props) {
     mainView = (
       <button onClick = {() => {
         callPeer(props.opponentSocketId)
-      }}><h1>Chat with your friend while you play!</h1></button>
+      }}><h1>Call opponent</h1></button>
     )
   }
 
